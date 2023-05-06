@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 // import { Link } from 'react-router-dom';
 import { auth } from '../../../firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 import "./loginpage.css"
+const provider = new GoogleAuthProvider();
+
 
 const LoginPage = () => {
     // const [username, setUsername] = useState('');
@@ -21,6 +23,24 @@ const LoginPage = () => {
                 alert("User creds mismatch")
             })
     }
+
+    const loginWithGoogle = (e) => {
+        e.preventDefault();
+        signInWithPopup(auth, provider)
+            .then((result) => {
+              const credential = GoogleAuthProvider.credentialFromResult(result);
+              const token = credential.accessToken;
+              const user = result.user;
+              window.location.href = '/'
+            }).catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              const email = error.customData.email;
+              const credential = GoogleAuthProvider.credentialFromError(error);
+            });
+    }
+
+    
     return (
         <div className='page login'>
             <form onSubmit={login} action="#" className="login-form">
@@ -43,6 +63,9 @@ const LoginPage = () => {
                 </div>
                 <div className="btn-container">               
                     <button type='submit' className='submit-btn'>Login</button>
+                </div>
+                <div className="btn-container">               
+                    <button onClick={loginWithGoogle} className='submit-btn'>LoginWith Google</button>
                 </div>
             </form>
         </div>
