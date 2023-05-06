@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { auth } from '../../../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -15,8 +15,10 @@ const LoginPage = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log(userCredential);
+                window.location.href = '/'
             }).catch((error) => {
                 console.log(error);
+                alert("User creds mismatch")
             })
     }
     return (
@@ -40,7 +42,7 @@ const LoginPage = () => {
                     </div>
                 </div>
                 <div className="btn-container">               
-                    <button type='submit' className='submit-btn'><Link to="/home">Login</Link></button>
+                    <button type='submit' className='submit-btn'>Login</button>
                 </div>
             </form>
         </div>
