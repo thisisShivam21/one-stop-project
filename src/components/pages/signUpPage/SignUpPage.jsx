@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
 import { auth } from '../../../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
@@ -15,8 +14,10 @@ const SignUpPage = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log(userCredential);
+                window.location.href = '/login'
             }).catch((error) => {
                 console.log(error);
+                alert("Failed")
             })
     }
     return (
@@ -44,7 +45,7 @@ const SignUpPage = () => {
                     </div>
                 </div>
                 <div className="btn-container">               
-                    <button type='submit' className='submit-btn'><Link to="/login">Sign Up</Link></button>
+                    <button type='submit' className='submit-btn'>Sign Up</button>
                 </div>
             </form>
         </div>
