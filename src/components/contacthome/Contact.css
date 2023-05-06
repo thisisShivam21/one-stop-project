@@ -1,0 +1,187 @@
+/* Contact Us */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  width: 35%;
+  /* row-gap: 1.5rem; */
+}
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.contact-title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.contact-info,
+.contact-data,
+.contact-form {
+  display: grid;
+}
+
+.contact-info {
+  row-gap: 3rem;
+  padding-left: 7rem;
+}
+
+.contact-data {
+  row-gap: .75rem;
+}
+
+.contact-data-title {
+  font-size: 1.5rem;
+  color: hsl(207, 4%, 56%);
+}
+
+.contact-data-info {
+  font-size: 1.2rem;
+  /* font-family: var(--title-font); */
+  color: hsl(207, 4%, 16%);
+}
+
+.contact-button {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: hsl(207, 4%, 16%);
+  font-size: 1.2rem;
+}
+
+.contact-button i {
+  font-size: 1rem;
+  transition: transform .3s;
+}
+
+.contact-button:hover i {
+  transform: translateX(.25rem) scale(1.2);
+}
+
+.contact-form {
+  position: relative;
+  row-gap: 2.5rem;
+}
+
+.contact-form-div {
+  position: relative;
+  height: 4rem;
+}
+
+.contact-form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  border: 2px solid hsl(207, 4%, 56%);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  /* font-family: var(--title-font); */
+  color: hsl(207, 4%, 16%);
+  background: none;
+  outline: none;
+  z-index: 1;
+}
+
+.contact-form-tag {
+  position: absolute;
+  top: -.75rem;
+  left: 1.25rem;
+  z-index: 10;
+  background-color: #ffe6a7;
+  color: hsl(207, 4%, 16%);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .35rem;
+  /* transition: background .4s; for dark mode animation */
+}
+
+.contact-form-area {
+  height: 15rem;
+}
+
+.contact-form-area textarea {
+  resize: none;
+}
+
+.contact-form .contact-button {
+  border: solid 0.25rem rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  background: #BB9457;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: .75rem;
+  padding: 0.4rem 1.5rem;
+  opacity: 0.9;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-form .contact-button:hover {
+  padding: 0.8rem 1.5rem;
+  background: #000;
+  color: #fff;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.contact-form .contact-button i {
+  font-size: 1.5rem;
+  font-weight: initial;
+}
+
+.contact-message {
+  font-size: .813rem;
+  position: absolute;
+  bottom: 4.5rem;
+  left: 1.5rem;
+}
+
+/* Status color */
+
+.color-red {
+  color: hsl(4, 71%, 50%);
+}
+
+.color-blue {
+  color: hsl(207, 56%, 45%);
+}
+
+@media (max-width: 600px) {
+  .contact-main {
+    column-gap: 25rem;
+    height: 40vh;
+  }
+
+  .section-title {
+    font-size: 8rem;
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+
+}

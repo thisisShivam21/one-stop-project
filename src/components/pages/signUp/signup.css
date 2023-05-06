@@ -1,0 +1,59 @@
+.register {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05)), url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
+
+.registerTitle {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.registerForm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm > label {
+    margin: .8rem 0;
+    font-size: 1.5rem;
+}
+
+.registerInput {
+    padding: .6rem;
+    background-color: #fff;
+    border: none;
+}
+
+.registerButton {
+    margin-top: 2rem;
+    padding: .6rem;
+    background-color: #BB9457;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.registerButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 .6rem 1.2rem;
+    background: #000;
+    transform: translateY(-2px);
+}
+
+/* .registerLoginButton {
+    position: absolute;
+    top: 6rem;
+    right: 1.5rem;
+    background-color: lightcoral;
+    color: #fff;
+    padding: .8rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+} */

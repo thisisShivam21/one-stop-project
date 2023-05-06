@@ -1,0 +1,64 @@
+.signUp {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05)), url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
+
+.signup-form {
+    background: white;
+    min-height: 60vh;
+    width: 30%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.signup-form {
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container {
+    margin: .8rem 0;
+    font-size: 1.5rem;
+}
+
+.input-field {
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: .8rem;
+}
+
+.submit-btn {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    background-color: #BB9457;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 .6rem 1.2rem;
+    background: #000;
+    transform: translateY(-2px);
+}

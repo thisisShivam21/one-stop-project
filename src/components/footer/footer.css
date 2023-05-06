@@ -1,0 +1,141 @@
+.section-padding {
+    padding: 4rem;
+}
+
+.footer {
+    background: #FFE6A7;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.f-div-links {
+    width: 13rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #402218;
+}
+
+.f-div-links a p {
+    color: #C68B59;
+}
+
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icon {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-right: .6rem;
+}
+
+.f-div-links h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.f-div-links p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0.3rem 0;
+    cursor: pointer;
+}
+
+.footer-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.footer-down-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-down-links p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: 2rem;
+    color: #C68B59;
+    font-weight: 600;
+}
+
+hr {
+    color: #fff !important;
+    width: 100%;
+}
+
+.footer-copyright {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #C68B59;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+    .footer-heading h1 {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-heading h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .footer-links div {
+        margin: 1rem 0;
+    }
+
+    .footer-btn p {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .footer-down {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .footer-down-links {
+        flex-direction: column;
+    }
+
+    .footer-down-links p {
+        margin: 1rem 1rem 1rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-heading h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}

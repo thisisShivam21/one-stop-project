@@ -1,0 +1,144 @@
+.accordion {
+    background: #fdf5e6;
+}
+
+.faq-heading {
+    text-align: center;
+    margin: 0 auto; 
+    margin-bottom: 10rem;
+}
+
+.faqs-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.con2 {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.faq-image {
+    width: 40rem;
+    height: 28rem;
+    margin-left: 2rem;
+    padding: .5rem;
+    background: rgba(85, 206, 223, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 14px 50px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid #c69f26;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.05)
+    );
+    /* object-fit: cover; */
+}
+
+.Item2 {
+    /* background-color: #283042; */
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.link2 {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0; /* This can be changed later to 1rem */
+}
+
+.link2 i {
+    color: #000;
+    padding: .5rem;
+}
+
+.link2 .fa-hand-o-up {
+    display: none;
+}
+
+.answer2 {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms ease-in-out;
+}
+
+.answer2::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer2 p {
+    font-size: 1.2rem;
+    color: #000;
+    padding: 2rem;
+}
+
+.answer2 a:hover,
+.answer2 a:focus {
+  color: #1792d2;
+}
+
+.Item2:target .answer2 {
+    max-height: 20rem;
+}
+
+.Item2:target .link2 .fa-hand-o-down {
+    display: none;
+}
+
+.Item2:target .link2 .fa-hand-o-up {
+    display: block;
+}
+
+  
+@media (max-width: 600px) {
+    .faqs-section {
+      flex-direction: column;
+      row-gap: 12rem;
+    }
+
+    .faq-heading {
+        padding-top: 15rem;
+        margin: 0rem 0 3rem 0;
+    }
+
+    .faq-image {
+        width: 45rem;
+        height: 35rem;
+        margin: 0 auto;
+    }
+  
+    header {
+      text-align: center;
+    }
+
+    .link2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    #question1, #question2, #question3, #question4, #question5 {
+        height: 8rem;
+    }   
+}

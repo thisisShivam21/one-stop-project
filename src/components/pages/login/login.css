@@ -1,0 +1,74 @@
+.login {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05)), url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-size: cover;
+}
+
+.login-container {
+    background: white;
+    min-height: 60vh;
+    width: 30%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem; */
+}
+
+.loginTitle {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.loginForm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: .8rem 0;
+    font-size: 1.5rem;
+}
+
+.loginInput {
+    padding: .6rem;
+    background-color: #fff;
+    border: none;
+}
+
+.loginButton {
+    margin-top: 2rem;
+    padding: .6rem;
+    background-color: #BB9457;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 .6rem 1.2rem;
+    background: #000;
+    transform: translateY(-2px);
+  }
+
+/* .loginRegisterButton {
+    position: absolute;
+    top: 6rem;
+    right: 1.5rem;
+    background-color: teal;
+    color: #fff;
+    padding: .8rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+} */
