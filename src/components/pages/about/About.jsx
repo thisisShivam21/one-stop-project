@@ -40,7 +40,7 @@ export default function About() {
         </div>
       </div>
       <div className="about-right">
-        <img src={House} alt="This is an house" className="main-img" />
+        <img src={House} alt="This is an house" className="about-img" />
       </div>
     </div>
   )

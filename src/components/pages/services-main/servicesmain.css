@@ -102,6 +102,11 @@
     opacity: 0.9;
     transition: all 200ms ease-in-out;
   }
+
+  .services-btn a {
+        color: #fff;
+        text-decoration: none;
+  }
   
 .services-btn:hover {
     padding: 0.8rem 1.5rem;

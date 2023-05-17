@@ -131,8 +131,8 @@ function Contact() {
                             <input type="email" name="user_email" required placeholder="Write your email" className="contact-form-input" id="contact-email" />
                         </div>
                         <div className="contact-form-div contact-form-area">
-                            <label className="contact-form-tag">Project</label>
-                            <textarea name="user_project" placeholder="Write your project" id="contact-project" className="contact-form-input"></textarea>
+                            <label className="contact-form-tag">Queries</label>
+                            <textarea name="user_project" placeholder="Write your queries" id="contact-project" className="contact-form-input"></textarea>
                         </div>
 
                         <p className="contact-message" id="contact-message"></p>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { auth } from '../../../firebase';
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
@@ -28,19 +28,19 @@ const LoginPage = () => {
         e.preventDefault();
         signInWithPopup(auth, provider)
             .then((result) => {
-              const credential = GoogleAuthProvider.credentialFromResult(result);
-              const token = credential.accessToken;
-              const user = result.user;
-              window.location.href = '/'
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                const user = result.user;
+                window.location.href = '/'
             }).catch((error) => {
-              const errorCode = error.code;
-              const errorMessage = error.message;
-              const email = error.customData.email;
-              const credential = GoogleAuthProvider.credentialFromError(error);
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                const email = error.customData.email;
+                const credential = GoogleAuthProvider.credentialFromError(error);
             });
     }
 
-    
+
     return (
         <div className='page login'>
             <form onSubmit={login} action="#" className="login-form">
@@ -61,13 +61,14 @@ const LoginPage = () => {
                         <input type="password" className="input-field" placeholder='Enter your Username...' required value={password} onChange={(e) => setPassword(e.target.value)} />
                     </div>
                 </div>
-                <div className="btn-container">               
+                <div className="btn-container">
                     <button type='submit' className='submit-btn'>Login</button>
                 </div>
-                <div className="btn-container">               
-                    <button onClick={loginWithGoogle} className='submit-btn'>LoginWith Google</button>
+                <div className="btn-container">
+                    <button onClick={loginWithGoogle} className='submit-btn'>Login With Google</button>
                 </div>
             </form>
+            <button className='signup-btn'><Link to="/signup">Sign Up</Link></button>
         </div>
     )
 }

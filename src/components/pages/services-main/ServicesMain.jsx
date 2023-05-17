@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../services-main/servicesmain.css'
 
 import AccommodationServices from "../../images/AccommodationServices.jpg";
@@ -19,7 +20,7 @@ export default function ServicesMain() {
                         <p className="box-desc">
                             Range of services we provide to help university students find affordable and comfortable housing options on and around the campus. As a one-stop solution provider, we offer a range of accommodation options, including dorm rooms, apartments, and shared houses, both on-campus and off-campus.
                         </p>
-                        <button className="services-btn">Learn More</button>
+                        <button className="services-btn"><Link to="/servicesMap">Learn More</Link></button>
                     </div>
                     <div className="right-box">
                         <img className="services-img" src={AccommodationServices} alt="this is house" />
@@ -34,7 +35,7 @@ export default function ServicesMain() {
                         <p className="box-desc">
                             Healthcare services provided by us aim to ensure that university students have access to quality healthcare facilities and resources on and around the campus
                         </p>
-                        <button className="services-btn">Learn More</button>
+                        <button className="services-btn"><Link to="/serviceMaps">Learn More</Link></button>
                     </div>
                 </div>
                 <div className="services-box-3">

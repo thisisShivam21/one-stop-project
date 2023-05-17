@@ -5,6 +5,7 @@
 .footer {
     background: #FFE6A7;
     width: 100%;
+    /* position: fixed; */
 }
 
 .footer-container {
@@ -36,7 +37,7 @@
     color: #C68B59;
 }
 
-a {
+.footer-social, .footer-links, a {
     color: #121212;
     text-decoration: none;
 }

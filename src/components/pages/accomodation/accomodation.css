@@ -1,0 +1,84 @@
+.acc-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.acc-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.acc-search {
+    flex: 1;
+    background-color: #FFE6A7;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: sticky;
+    top: 1rem;
+    height: max-content;
+}
+
+.search-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.acc-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: .8rem;
+}
+.acc-item>label {
+    font-size: 1rem;
+}
+
+.acc-item>input {
+    height: 2.5rem;
+    border: none;
+    padding: .5rem;
+}
+
+.acc-item>span {
+    height: 2.5rem;
+    padding: .5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acc-options {
+    padding: 1rem;
+}
+
+.acc-option-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.acc-option-input {
+    width: 4.5rem;
+}
+
+.acc-search-btn {
+    padding: .8rem;
+    background-color: #0071c2;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.acc-result {
+    flex: 3;
+}
+

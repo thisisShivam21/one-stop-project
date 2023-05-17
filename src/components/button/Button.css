@@ -12,6 +12,11 @@
     margin-right: .5rem;
 }
 
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn:hover {
     padding: 0.8rem 1.5rem;
     background: #000;
