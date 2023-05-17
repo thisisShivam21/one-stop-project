@@ -2,12 +2,12 @@ import React, { useRef, useEffect, useState } from 'react';
 import { ReactDOM } from 'react';
 import "../servicesMap/servicesmap.css"
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import MapBoxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import { useControl } from 'react-map-gl';
+import { useValue } from '../../../contexts/ContextProvider';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 // import { Marker } from 'react-map-gl';
 import { Viewport } from 'deck.gl';
-
-// import fetchFakeData from "../../../api/fetchFakeData";
-// import Popup from "../../../components/popup/Popup";
-// import { Marker } from 'react-map-gl';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpdmFtLTIxIiwiYSI6ImNsaHFmd2J4YjIzZnQzcXMxM2Q3bnYzdWwifQ.wNhl45GopBydEKapuvDQ0A';
 
@@ -28,6 +28,12 @@ export default function ServicesMap() {
       center: [lng, lat],
       zoom: zoom
     });
+    map.current.addControl(
+      new MapBoxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl
+      })
+      );
   });
 
   useEffect(() => {
@@ -54,24 +60,6 @@ export default function ServicesMap() {
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </div>
       <div ref={mapContainer} className="map-container" onDoubleClick={handleClick} />
-      {newPlace ? (
-        <>
-        <div
-        latitude={newPlace?.lat}
-        longitude={newPlace?.long}
-        offsetLeft={-3.5 * Viewport.zoom}
-        offsetTop={-7 * Viewport.zoom}
-        >
-          <div className='marker'
-            style={{
-              fontSize: 7 * Viewport.zoom,
-              color: "tomato",
-              cursor: "pointer",
-            }}
-          />
-        </div>
-        </>
-      ): null}
     </div>
   )
 }
