@@ -35,7 +35,7 @@ export default function ServicesMain() {
                         <p className="box-desc">
                             Healthcare services provided by us aim to ensure that university students have access to quality healthcare facilities and resources on and around the campus
                         </p>
-                        <button className="services-btn"><Link to="/serviceMaps">Learn More</Link></button>
+                        <button className="services-btn"><Link to="/servicesMap">Learn More</Link></button>
                     </div>
                 </div>
                 <div className="services-box-3">
@@ -44,7 +44,7 @@ export default function ServicesMain() {
                         <p className="box-desc">
                             Range of food and dining options we provide to ensure that university students have access to affordable and nutritious meals throughout their academic career.
                         </p>
-                        <button className="services-btn">Learn More</button>
+                        <button className="services-btn"><Link to="/servicesMap">Learn More</Link></button>
                     </div>
                     <div className="right-box">
                         <img className="services-img" src={EateriesServices} alt="this is restro" />

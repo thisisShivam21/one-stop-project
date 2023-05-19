@@ -24,10 +24,6 @@ const SignUpPage = () => {
         <div className='page signUp'>
             <form onSubmit={signup} action="#" className="signup-form">
                 <h2 className='signup-title'>Sign Up</h2>
-                {/* <div className="signup-fields">
-                    <label htmlFor="/" className="field-name">Username</label>
-                    <input type="text" className="input-field" placeholder='Enter your Username...' required value={username} onChange={(e) => setUsername(e.target.value)} />
-                </div> */}
                 <div className="signup-fields">
                     <div className="name-container">
                             <label htmlFor="/" className="field-name">Email</label>

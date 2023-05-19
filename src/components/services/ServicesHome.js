@@ -10,7 +10,7 @@ function ServicesHome() {
             <div className='card-container'>
 
                 <div className='card'>
-                    <i className="fa-regular fa-house"></i>
+                    {/* <i className="fa-regular fa-house"></i> */}
                     <h2 className='services-title'>
                         Accomodation
                     </h2>
@@ -23,7 +23,7 @@ function ServicesHome() {
                 </div>
 
                 <div className='card'>
-                    <i className="fa-regular fa-burger-soda"></i>
+                    {/* <i className="fa-regular fa-burger-soda"></i> */}
                     <h2 className='services-title'>
                         Eateries
                     </h2>
@@ -36,7 +36,7 @@ function ServicesHome() {
                 </div>
 
                 <div className='card'>
-                    <i className="fa-thin fa-hospital"></i>
+                    {/* <i className="fa-thin fa-hospital"></i> */}
                     <h2 className='services-title'>
                         HealthCare
                     </h2>

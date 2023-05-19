@@ -9,7 +9,7 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 // import { Marker } from 'react-map-gl';
 import { Viewport } from 'deck.gl';
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpdmFtLTIxIiwiYSI6ImNsaHFmd2J4YjIzZnQzcXMxM2Q3bnYzdWwifQ.wNhl45GopBydEKapuvDQ0A';
+mapboxgl.accessToken = process.env.REACT_APP_MAP_TOKEN;
 
 
 export default function ServicesMap() {
@@ -30,10 +30,10 @@ export default function ServicesMap() {
     });
     map.current.addControl(
       new MapBoxGeocoder({
-      accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
       })
-      );
+    );
   });
 
   useEffect(() => {

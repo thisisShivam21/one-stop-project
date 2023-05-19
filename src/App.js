@@ -1,14 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import { Button } from 'reactstrap';
-// import 'maplibre-gl/dist/maplibre-gl.css';
+
 import './App.css';
 
-// import Login from './components/pages/login/Login';
-// import SignUp from './components/pages/signUp/SignUp';
-// import ServicesHome from './components/services/ServicesHome';
-// import AuthProvider from './contexts/AuthContext';
-// import SignUpPage from './components/pages/signUpPage/SignUpPage';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
@@ -25,7 +19,6 @@ import ServiceMaps from './components/pages/apiMap/ServiceMaps';
 
 function App() {
   return (
-    // <AuthProvider>
     <div className="App">
       <Navbar />
       <Routes>
@@ -41,7 +34,6 @@ function App() {
       </Routes>
       <Footer />
     </div>
-    // </AuthProvider>
   );
 }
 

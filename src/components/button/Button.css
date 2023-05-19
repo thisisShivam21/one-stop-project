@@ -5,7 +5,7 @@
 .btn {
     border: solid 0.25rem rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
-    padding: 0.4rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     opacity: 0.9;
     transition: all 200ms ease-in-out;
     cursor: pointer;
